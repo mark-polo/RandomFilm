@@ -21,6 +21,7 @@ public class HTMLParser {
         ////////////////////////////  1 min 21 sec  - 50  ////////////////////////////
         ///////////////////////////   2 sec - 1  ////////////////////////////
 
+        //// here in for loop you can change amount of titles. For example , if i == 2 , then amount of titles(film name) == 51 , if i == 20 , then titles == 69  e.t.c . But than more i , then more time of processing
         for(int i = 1; i <= 2; i++) {
             URL url = new URL("https://www.imdb.com/search/title/?title_type=feature&num_votes=25,&view=simple&sort=num_votes,desc&start=" + i + "&ref_=adv_nxt");  /// instead page better use start ///
 
@@ -37,12 +38,12 @@ public class HTMLParser {
             }
         }
 
-        //FilmMongoDb.check(FilmGlobalVariables.USER_ID, ids);
+        FilmMongoDb.check(FilmGlobalVariables.USER_ID, ids);
 
         System.out.println("ids : " + ids.get(index));
-        System.out.println("ids size : " + ids.size());
+        System.out.println("ids size : " + ids.size()); /// 100 el in array
         String s = ids.get(index);
-        System.out.println("ids size : " + Arrays.toString(s.getBytes()));
+        System.out.println("ids size in bytes : " + Arrays.toString(s.getBytes())); /// 600 Byte
         return ids.get(index);
     }
 }
