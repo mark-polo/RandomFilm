@@ -118,8 +118,8 @@ public class WhatWatch  extends TelegramLongPollingBot {
     }
 
     @Override
-    public String getBotUsername() { return "whatWatchBot_bot by mrm"; }
+    public String getBotUsername() { return "mrm"; }
 
     @Override
-    public String getBotToken() { return "1257508030:AAFzB7WhPLdBpNuddAyD_eEz4sS1JxejSSs"; }
+    public String getBotToken() { return "your telegram token"; }
 }
