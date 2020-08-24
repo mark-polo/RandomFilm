@@ -14,13 +14,13 @@ public class FilmMongoDb {
 
         java.util.logging.Logger.getLogger("org.mongodb.driver").setLevel(Level.OFF);
 
-        MongoClientURI connectionString = new MongoClientURI("mongodb://new_user_1:1q2w3e4r5t6yQ@tutorial-shard-00-00.ickxg.mongodb.net:27017,tutorial-shard-00-01.ickxg.mongodb.net:27017,tutorial-shard-00-02.ickxg.mongodb.net:27017/FilmSet?ssl=true&replicaSet=atlas-14253y-shard-0&authSource=admin&retryWrites=true&w=majority");
+        MongoClientURI connectionString = new MongoClientURI("your client uri");
 
         MongoClient mongoClient = new MongoClient(connectionString);
 
-        MongoDatabase database = mongoClient.getDatabase("FilmSet");
+        MongoDatabase database = mongoClient.getDatabase("your name db");
 
-        MongoCollection<Document> collection = database.getCollection("Film");
+        MongoCollection<Document> collection = database.getCollection("your user");
 
         long found = collection.count(Document.parse("{id : " + user_id + "}"));
 
