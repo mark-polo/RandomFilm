@@ -13,7 +13,7 @@ public class Film {
 
     public static String film(IMDBModel model) throws IOException {
 
-        URL url = new URL("http://www.omdbapi.com/?i=" + HTMLParser.parser(randomIMDBId(FilmGlobalVariables.FILM_FIRST_NUM , FilmGlobalVariables.FILM_SECOND_NUM)) + "&apikey=c19eae94");
+        URL url = new URL("http://www.omdbapi.com/?i=" + HTMLParser.parser(randomIMDBId(FilmGlobalVariables.FILM_FIRST_NUM , FilmGlobalVariables.FILM_SECOND_NUM)) + "your api key");
 
         Scanner in = new Scanner((InputStream) url.getContent());
 
