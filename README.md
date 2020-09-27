@@ -1,2 +1,4 @@
 # FilmBot
-This is telegram bot for random choose film
+
+Телеграм бот для рандомного поиска фильмов из сайта IMDb.com .
+
